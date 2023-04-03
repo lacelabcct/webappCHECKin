@@ -1,0 +1,5 @@
+G:\
+
+cd MCK2.1 - LP22.2\Streamlit.io\webapp02
+
+streamlit run webapp02.py

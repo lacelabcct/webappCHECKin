@@ -36,3 +36,17 @@ plt.axis("off")
 plt.show()
 #st.pyplot()
 wordcloud.to_file("Nuvem_de_Palavras_Mensagem.png")
+image01 = Image.open('ImagemLateral.jpg')
+st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
+st.title("PAINEL FabLab")
+
+st.header("Principais Dúvidas:")
+st.pyplot() #Este método faz exibirt a nuvem de palavras
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
+#st.subheader("Sub Cabeçalho")
+#st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
+menu = ["Dúvidas",
+        "Respostas"]
+choice = st.sidebar.selectbox("Menu de Opções",menu)
+st.sidebar.info("By: Prof. Massaki de O. Igarashi")

@@ -7,7 +7,7 @@ import pandas as pd
 import altair as alt
 #import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-import datetime
+
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vTN00fNo-fKTaMHme6ed2fTMkmqvoCxUA_u1PmkL9bADZ-OXrVcTvmw4o3yrgRjGdP09vOd51Za2uPE/pub?gid=0&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)

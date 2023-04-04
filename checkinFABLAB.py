@@ -35,11 +35,11 @@ with col1:
     #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
     st.image('Selo20anosCCT.PNG', width=400, output_format='auto')  
 with col2: 
-    st.write(" ")
- with col3: 
+    st.title(" ")
+with col3: 
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 
-st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
+st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4", width=500)
 
 # mostrar a imagem final
 #fig, ax = plt.subplots(figsize=(10,6))

@@ -48,7 +48,7 @@ with col1:
     #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
     st.image('Selo20anosCCT.PNG', width=200, output_format='auto')  
 with col2:    
-    #st.title("PAINEL DE MENSAGENS")  
+    st.title(" ")  
 with col3:
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 

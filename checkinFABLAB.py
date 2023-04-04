@@ -39,7 +39,7 @@ with col2:
 with col3: 
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 
-st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4", width=500)
+st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 
 # mostrar a imagem final
 #fig, ax = plt.subplots(figsize=(10,6))

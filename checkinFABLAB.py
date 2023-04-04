@@ -44,6 +44,7 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 col1, col2 = st.columns((1,1))
 with col1:
     #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
+    st.image('Selo20anosCCT.PNG', width=180, output_format='auto')  
     st.image('LOGO - FabLLab.JPG', width=180, output_format='auto')
 with col2:
     st.title("PAINEL - FabLab")

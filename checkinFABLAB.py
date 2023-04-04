@@ -33,7 +33,7 @@ wordcloud = WordCloud(stopwords=stopwords,
 col1, col2 = st.columns((1,1))
 with col1:
     #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
-    st.image('Selo20anosCCT.PNG', width=300, output_format='auto')  
+    st.image('Selo20anosCCT.PNG', width=400, output_format='auto')  
 with col2:    
     st.image('LOGO - FabLLab.JPG', width=150, output_format='auto')
 
@@ -53,5 +53,5 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.info("Desenvolvido em Linguagem Python.")
+st.write("Desenvolvido em Linguagem Python.")
 st.info("Equipe FabLab/Programado pelo Prof. Massaki de O. Igarashi")

@@ -30,6 +30,15 @@ wordcloud = WordCloud(stopwords=stopwords,
                       background_color="white",
                       width=1600, height=800).generate(all_summary)
 
+col1, col2, col3 = st.columns((1,1,1))
+with col1:
+    #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
+    st.image('Selo20anosCCT.PNG', width=200, output_format='auto')  
+with col2:    
+    st.title(" ")  
+with col3:
+    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
+
 st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 
 # mostrar a imagem final
@@ -43,14 +52,6 @@ plt.show()
 #st.pyplot()
 wordcloud.to_file("Mensagens_dos_Visitantes.png")
 
-col1, col2, col3 = st.columns((1,1,1))
-with col1:
-    #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
-    st.image('Selo20anosCCT.PNG', width=200, output_format='auto')  
-with col2:    
-    st.title(" ")  
-with col3:
-    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)

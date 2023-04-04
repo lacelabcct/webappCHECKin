@@ -44,10 +44,10 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 col1, col2 = st.columns((1,1))
 with col1:
     #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
-    st.image('LOGO - FabLLab.JPG', width=200, output_format='auto')
+    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 with col2:
     st.title("PAINEL - FabLab")
-st.header("Mensagens dos visitantes:")
+    st.header("Mensagens dos visitantes:")
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")

@@ -44,4 +44,5 @@ st.title("PAINEL - FabLab")
 st.header("Mensagens dos visitantes:")
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
+st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 st.info("Desenvolvido por: Equipe FabLab / Prof. Massaki de O. Igarashi")

@@ -18,6 +18,8 @@ selecao = dfD['Aprovado']=='X'
 df01 = dfD[selecao]
 NregD = len(df01)
 
+#st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
+st.image('LOGO - FabLLab.JPG', width=200, output_format='auto')
 # eliminar as colunas com valores ausentes
 summary = df01.dropna(subset=['Mensagem'], axis=0)['Mensagem']
 # concatenar as palavras

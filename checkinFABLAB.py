@@ -18,8 +18,6 @@ selecao = dfD['Aprovado']=='X'
 df01 = dfD[selecao]
 NregD = len(df01)
 
-#st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
-st.image('LOGO - FabLLab.JPG', width=200, output_format='auto')
 # eliminar as colunas com valores ausentes
 summary = df01.dropna(subset=['Mensagem'], axis=0)['Mensagem']
 # concatenar as palavras
@@ -42,7 +40,13 @@ plt.axis("off")
 plt.show()
 #st.pyplot()
 wordcloud.to_file("Mensagens_dos_Visitantes.png")
-st.title("PAINEL - FabLab")
+
+col1, col2 = st.columns((1,1))
+with col1:
+    #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
+    st.image('LOGO - FabLLab.JPG', width=200, output_format='auto')
+with col2:
+    st.title("PAINEL - FabLab")
 st.header("Mensagens dos visitantes:")
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)

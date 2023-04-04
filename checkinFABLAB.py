@@ -14,11 +14,12 @@ import qrcode
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vTN00fNo-fKTaMHme6ed2fTMkmqvoCxUA_u1PmkL9bADZ-OXrVcTvmw4o3yrgRjGdP09vOd51Za2uPE/pub?gid=0&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
-
-NregD = len(dfD)
+selecao = dfD['Aprovado']=='X'
+df01 = dfD[selecao]
+NregD = len(df01)
 
 # eliminar as colunas com valores ausentes
-summary = dfD.dropna(subset=['Mensagem'], axis=0)['Mensagem']
+summary = df01.dropna(subset=['Mensagem'], axis=0)['Mensagem']
 # concatenar as palavras
 all_summary = " ".join(s for s in summary)
 # lista de stopword

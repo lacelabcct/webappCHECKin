@@ -86,4 +86,5 @@ st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Ma
 
 for i in range(NregD2):
   caminho = dfD2['link'][i]
-  st.markdown('<a href=caminho target="_self">i</a>', unsafe_allow_html=True)
+  if st.button(str(i)):
+    st.video(caminho)

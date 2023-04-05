@@ -79,12 +79,14 @@ plt.show()
 #st.pyplot()
 wordcloud.to_file("Mensagens_dos_Visitantes.png")
 
+st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
+with st.sidebar:
+  st.sidebar.button('0')
+  if st.sidebar.button(0):
+    st.video(str(dfD2['link'][0])) 
 
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
-with st.sidebar:
-  st.sidebar.button('0')
-  if st.sidebar.button(0):
-    st.video(str(dfD2['link'][0])) 
+

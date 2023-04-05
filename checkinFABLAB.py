@@ -64,9 +64,6 @@ with col3:
 with col4: 
     st.image('AppsheetCheck-inQRCode.png', width=150, output_format='auto')    
     
-#st.markdown("<h1 style='text-align: center; color: black;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
-#st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
-
 # mostrar a imagem final
 #fig, ax = plt.subplots(figsize=(10,6))
 #ax.imshow(wordcloud, interpolation='bilinear')
@@ -78,12 +75,13 @@ plt.show()
 #st.pyplot()
 wordcloud.to_file("Mensagens_dos_Visitantes.png")
 
+st.pyplot() #Este método faz exibirt a nuvem de palavras
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 if st.button("0"):
   st.video(dfD2['link'][0])
-st.pyplot() #Este método faz exibirt a nuvem de palavras
-st.set_option('deprecation.showPyplotGlobalUse', False)
+  
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
 

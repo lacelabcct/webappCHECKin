@@ -100,6 +100,26 @@ with c5:
 with c6:
   if st.button("5"):
     caminho = dfD2['link'][5]
+    
+c7, c8, c9, c10, c11, c12 = st.columns((1, 1, 1, 1, 1, 1))
+with c7:
+  if st.button("0"):
+    caminho = dfD2['link'][6]
+with c8:
+  if st.button("1"):
+    caminho = dfD2['link'][7]
+with c9:
+  if st.button("2"):
+    caminho = dfD2['link'][8]
+with c10:
+  if st.button("3"):
+    caminho = dfD2['link'][9]
+with c11:
+  if st.button("4"):
+    caminho = dfD2['link'][10]
+with c12:
+  if st.button("5"):
+    caminho = dfD2['link'][11]
 st.video(caminho)
 
 

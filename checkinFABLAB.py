@@ -40,13 +40,13 @@ with col3:
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 
 st.markdown(
-   f”””
+   f"""
    <style>
    p {
    background-image: url("https://github.com/engenhariacct/webappCHECKin/blob/main/MarcaFABLAB01.JPG");
    }
    </style>
-   ”””,
+   """,
    unsafe_allow_html=True)
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 

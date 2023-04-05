@@ -49,9 +49,9 @@ add_bg_from_local('FabLabBackground.PNG')
 st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 col1, col2 = st.columns((1, 1))
 with col1:  
-    st.write("Aponte seu smartphone e escreva uma frase.")
+    st.write("Aponte seu smartphone e escreva uma mensagem.")
 with col2: 
-    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
+    st.image('AppsheetCheck-inQRCode.png', width=100, output_format='auto')
 
     
 st.markdown("<h1 style='text-align: center; color: black;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)

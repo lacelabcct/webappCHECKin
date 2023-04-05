@@ -53,7 +53,11 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
     )
 add_bg_from_local('FabLabBackground.PNG')  
-    
+
+with st.sidebar:
+  st.sidebar.button('0')
+  if st.sidebar.button(0):
+    st.video(str(dfD2['link'][0])) 
 
 col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
 with col1:
@@ -80,11 +84,6 @@ plt.show()
 wordcloud.to_file("Mensagens_dos_Visitantes.png")
 
 st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
-with st.sidebar:
-  st.sidebar.button('0')
-  if st.sidebar.button(0):
-    st.video(str(dfD2['link'][0])) 
-
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")

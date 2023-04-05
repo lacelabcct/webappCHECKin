@@ -51,7 +51,8 @@ with col1:
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 with col2: 
     st.write(" ")
- 
+    
+st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 st.markdown("<h1 style='text-align: center; color: black;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
 
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")

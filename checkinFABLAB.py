@@ -11,7 +11,8 @@ import qrcode
 import base64
 #from urllib.error import URLError
 
-#DÚVIDAS
+!python.exe -m pip install --upgrade pip
+
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vTN00fNo-fKTaMHme6ed2fTMkmqvoCxUA_u1PmkL9bADZ-OXrVcTvmw4o3yrgRjGdP09vOd51Za2uPE/pub?gid=0&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)

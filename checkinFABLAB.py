@@ -85,5 +85,5 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
 for i in range(NregD2):
-  caminho = st.selectbox('Selecione LINK', dic(dfD2['link'][i]))
+  st.sidebar.button('Selecione LINK', dic(dfD2['link'][i]))
   st.video(caminho)

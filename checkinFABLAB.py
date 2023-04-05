@@ -79,8 +79,9 @@ st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
-st.write("CC BY-NC-SA - Esta licença permite que outros remixem, adaptem e criem a partir do seu trabalho para fins não comerciais, desde que atribuam a você o devido crédito e que licenciem as novas criações sob termos idênticos.")
 
+SUB_TITULO = '<p style="font-family:tahoma; color:Blue; font-size: 14px;">CC BY-NC-SA - Esta licença permite que outros remixem, adaptem e criem a partir do seu trabalho para fins não comerciais, desde que atribuam a você o devido crédito e que licenciem as novas criações sob termos idênticos.</p>'
+st.markdown(SUB_TITULO, unsafe_allow_html=True)
 
 caminho = dfD2['link'][0]
 c1, c2, c3, c4, c5, c6 = st.columns((1, 1, 1, 1, 1, 1))

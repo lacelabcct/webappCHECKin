@@ -52,7 +52,7 @@ with col1:
 with col2: 
     st.write(" ")
  
-st.markdown("<h1 style='text-align: center; color: darkblue;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: darkred;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
 
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 

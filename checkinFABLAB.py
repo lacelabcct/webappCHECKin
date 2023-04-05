@@ -28,7 +28,7 @@ stopwords.update(["de", "ao", "o", "nao", "para", "da", "meu", "em", "você", "t
 # gerar uma wordcloud
 wordcloud = WordCloud(stopwords=stopwords,
                       background_color="white",
-                      width=960, height=540).generate(all_summary)
+                      width=460, height=540).generate(all_summary)
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:

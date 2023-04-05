@@ -78,10 +78,19 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-if st.button("0"):
-  st.video(dfD2['link'][0])
+c0, c1, c2, c3 = st.columns((1, 1, 1, 1))
+with c0:
+  if st.button("0"):
+    st.video(dfD2['link'][0])
+with c1:
 if st.button("1"):
   st.video(dfD2['link'][1])
+with c2:
+if st.button("2"):
+  st.video(dfD2['link'][2])
+with c3:
+if st.button("3"):
+  st.video(dfD2['link'][3])
   
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 

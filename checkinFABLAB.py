@@ -50,7 +50,8 @@ col1, col2 = st.columns((1, 1))
 with col1:  
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 with col2: 
-    st.title("Como está sendo a sua experiência no FabLab?")  
+    st.write(" ")
+st.title("Como está sendo a sua experiência no FabLab?")  
 
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 

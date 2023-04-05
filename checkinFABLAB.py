@@ -70,5 +70,5 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.write("Desenvolvido em Linguagem Python.")
+st.write(" Desenvolvido em Linguagem Python.")
 st.info("Equipe FabLab/Programado pelo Prof. Massaki de O. Igarashi")

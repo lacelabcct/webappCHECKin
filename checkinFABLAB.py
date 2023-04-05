@@ -46,10 +46,10 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('FabLabBackground.PNG')  
     
-st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
+
 col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
 with col1:
-    st.write(" ")
+    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 with col2: 
     st.write("Aponte seu smartphone e escreva uma mensagem.")
 with col3: 

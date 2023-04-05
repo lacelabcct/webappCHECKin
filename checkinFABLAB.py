@@ -46,14 +46,11 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('FabLabBackground.PNG')  
 
-col1, col2, col3 = st.columns((1, 1,1))
-with col1:
-    #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
-    st.image('Selo20anosCCT.PNG', width=400, output_format='auto')  
+col1, col2 = st.columns((1, 1))
+with col1:  
+    st.image('LOGO - FabLLab.JPG', width=150, output_format='auto')
 with col2: 
-    st.title(" ")
-with col3: 
-    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
+    st.title("Como está sendo a sua experiência aqui")  
 
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 

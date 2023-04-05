@@ -85,4 +85,4 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
 for i in range(NregD2):
-  st.markdown('<a href=dfD2['link'][i] target="_self">dfD2['titulo'][i]</a>', unsafe_allow_html=True)
+  st.markdown('<a href=dfD2['link'][i] target="_self">i</a>', unsafe_allow_html=True)

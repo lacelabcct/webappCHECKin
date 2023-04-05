@@ -114,6 +114,7 @@ with c9:
 with c10:
   if st.button("9"):
     caminho = dfD2['link'][9]
+    st.write(caminho)
 with c11:
   if st.button("10"):
     caminho = dfD2['link'][10]

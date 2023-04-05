@@ -85,5 +85,6 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
 with st.sidebar:
+  st.sidebar.button('0')
   if st.sidebar.button(0):
     st.video(dfD2['link'][0]) 

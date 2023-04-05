@@ -87,7 +87,5 @@ st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Ma
 with st.sidebar:
     for i in range(NregD2):
       st.sidebar.button(str(i))
-
- #for i in range(NregD2):
- # if st.sidebar.button(str(i))
- #   st.video(dfD2['link'][i]) 
+    if st.sidebar.button(0)
+      st.video(dfD2['link'][0]) 

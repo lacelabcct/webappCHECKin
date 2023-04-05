@@ -47,12 +47,15 @@ def add_bg_from_local(image_file):
 add_bg_from_local('FabLabBackground.PNG')  
     
 st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
-col1, col2 = st.columns((1, 1))
-with col1:  
-    st.write("Aponte seu smartphone e escreva uma mensagem.")
+col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
+with col1:
+    st.write(" ")
 with col2: 
+    st.write("Aponte seu smartphone e escreva uma mensagem.")
+with col3: 
     st.image('AppsheetCheck-inQRCode.png', width=100, output_format='auto')
-
+with col4:
+    st.write(" ")
     
 st.markdown("<h1 style='text-align: center; color: black;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
 

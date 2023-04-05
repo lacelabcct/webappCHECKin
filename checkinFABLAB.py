@@ -77,4 +77,4 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
-st.markdown('<a href="https://www.youtube.com/" target="_self">...</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://www.youtube.com/" target="_self">LINK 01</a>', unsafe_allow_html=True)

@@ -51,11 +51,11 @@ col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
 with col1:
     st.image('LOGO - FabLLab.JPG', width=175, output_format='auto')
 with col2: 
-    st.subheader("Aponte seu smartphone e envie sua mensagem.")
+    st.write(" ") 
 with col3: 
-    st.image('AppsheetCheck-inQRCode.png', width=150, output_format='auto')
-with col4:
-    st.write(" ")
+    st.subheader("Aponte seu smartphone e envie sua mensagem.")
+with col4: 
+    st.image('AppsheetCheck-inQRCode.png', width=150, output_format='auto')    
     
 st.markdown("<h1 style='text-align: center; color: black;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
 

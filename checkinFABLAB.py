@@ -84,6 +84,10 @@ st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
-for i in range(NregD2):
-  if st.sidebar.button(str(i))
-    st.video(dfD2['link'][i]) 
+with st.sidebar:
+    for i in range(NregD2):
+      st.sidebar.button(str(i))
+
+ #for i in range(NregD2):
+ # if st.sidebar.button(str(i))
+ #   st.video(dfD2['link'][i]) 

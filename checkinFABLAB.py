@@ -39,7 +39,16 @@ with col2:
 with col3: 
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 
-st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
+st.markdown(
+   f”””
+   <style>
+   p {
+   background-image: url(‘MarcaFABLAB01.JPG’);
+   }
+   </style>
+   ”””,
+   unsafe_allow_html=True)
+#st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 
 # mostrar a imagem final
 #fig, ax = plt.subplots(figsize=(10,6))

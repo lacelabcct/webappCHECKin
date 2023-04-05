@@ -12,13 +12,19 @@ import base64
 
 
 #from urllib.error import URLError
-
+#DATA CHECK-IN
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vTN00fNo-fKTaMHme6ed2fTMkmqvoCxUA_u1PmkL9bADZ-OXrVcTvmw4o3yrgRjGdP09vOd51Za2uPE/pub?gid=0&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
 selecao = dfD['Aprovado']=='X'
 df01 = dfD[selecao]
 NregD = len(df01)
+
+#Data LINKS
+rD2 = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQhjoG-Sgj_9A1n6PAbwuJ6saRnyw1DW-q6KwEi_i3KxGxXrWGVcTk_daQ_Zpq4RwP8LApufF7l0lVm/pub?gid=0&single=true&output=csv')
+dataD2 = rD2.content
+dfD2 = pd.read_csv(BytesIO(dataD2), index_col=0)
+NregD2 = len(dfD2)
 
 # eliminar as colunas com valores ausentes
 summary = df01.dropna(subset=['Mensagem'], axis=0)['Mensagem']
@@ -77,4 +83,6 @@ wordcloud.to_file("Mensagens_dos_Visitantes.png")
 st.pyplot() #Este método faz exibirt a nuvem de palavras
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
-st.markdown('<a href="https://www.youtube.com/" target="_self">LINK 01</a>', unsafe_allow_html=True)
+
+for i in range(NregD2):
+  st.markdown('<a href=dfD2['link'][i] target="_self">dfD2['titulo'][i]</a>', unsafe_allow_html=True)

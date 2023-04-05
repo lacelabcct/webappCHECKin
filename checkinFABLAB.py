@@ -87,4 +87,4 @@ st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Ma
 with st.sidebar:
   st.sidebar.button('0')
   if st.sidebar.button(0):
-    st.video(dfD2['link'][0]) 
+    st.video(str(dfD2['link'][0])) 

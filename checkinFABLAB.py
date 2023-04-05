@@ -43,7 +43,7 @@ st.markdown(
    f”””
    <style>
    p {
-   background-image: url(‘MarcaFABLAB01.JPG’);
+   background-image: url(‘https://github.com/engenhariacct/webappCHECKin/blob/main/MarcaFABLAB01.JPG’);
    }
    </style>
    ”””,

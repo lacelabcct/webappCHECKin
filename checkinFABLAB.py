@@ -30,15 +30,6 @@ wordcloud = WordCloud(stopwords=stopwords,
                       background_color="white",
                       width=1600, height=800).generate(all_summary)
 
-col1, col2, col3 = st.columns((1, 1,1))
-with col1:
-    #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
-    st.image('Selo20anosCCT.PNG', width=400, output_format='auto')  
-with col2: 
-    st.title(" ")
-with col3: 
-    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
-
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
@@ -53,7 +44,17 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('MarcaFABLAB01.JPG')  
+add_bg_from_local('FabLabBackground.PNG')  
+
+col1, col2, col3 = st.columns((1, 1,1))
+with col1:
+    #st.image(https://github.com/engenhariacct/webappCHECKin/blob/main/LOGO%20-%20FabLLab.JPG, width=200, output_format="auto")
+    st.image('Selo20anosCCT.PNG', width=400, output_format='auto')  
+with col2: 
+    st.title(" ")
+with col3: 
+    st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
+
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 
 # mostrar a imagem final

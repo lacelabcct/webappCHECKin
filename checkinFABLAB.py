@@ -53,7 +53,7 @@ with col1:
 with col2: 
     st.write(" ") 
 with col3: 
-    st.subheader("Aponte seu smartphone e envie sua mensagem.")
+    st.subheader("Como está sendo a sua experiência?")
 with col4: 
     st.image('AppsheetCheck-inQRCode.png', width=150, output_format='auto')    
     

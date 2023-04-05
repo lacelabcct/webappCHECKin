@@ -52,6 +52,7 @@ with col1:
 with col2: 
     st.write(" ")
 st.title("Como está sendo a sua experiência?")  
+st.markdown("<h1 style='text-align: center; color: grey;'>Como está sendo a sua experiência?</h1>", unsafe_allow_html=True)
 
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 

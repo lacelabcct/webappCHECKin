@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import qrcode
 import base64
-import webbrowser
+
 
 #from urllib.error import URLError
 

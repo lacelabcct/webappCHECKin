@@ -80,19 +80,21 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Massaki de O. Igarashi")
 
+caminho = dfD2['link'][0]
 c1, c2, c3, c4 = st.columns((1, 1, 1, 1))
 with c1:
   if st.button("0"):
-    st.video(dfD2['link'][0])
+    caminho = dfD2['link'][0]
 with c2:
   if st.button("1"):
-    st.video(dfD2['link'][1])
+    caminho = dfD2['link'][1]
 with c3:
   if st.button("2"):
-    st.video(dfD2['link'][2])
+    caminho = dfD2['link'][2]
 with c4:
   if st.button("3"):
-    st.video(dfD2['link'][3])
-  
+    caminho = dfD2['link'][3]
+ 
+st.video(caminho)
 
 

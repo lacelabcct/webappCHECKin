@@ -7,4 +7,3 @@ matplotlib
 requests
 wordcloud
 qrcode
-base64

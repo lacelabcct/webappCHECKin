@@ -8,6 +8,7 @@ import altair as alt
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import qrcode
+import base64
 #from urllib.error import URLError
 
 #DÚVIDAS
@@ -39,15 +40,21 @@ with col2:
 with col3: 
     st.image('LOGO - FabLLab.JPG', width=100, output_format='auto')
 
-st.markdown(
-   f"""
-   <style>
-   p {
-   background-image: url("https://github.com/engenhariacct/webappCHECKin/blob/main/MarcaFABLAB01.JPG");
-   }
-   </style>
-   """,
-   unsafe_allow_html=True)
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+add_bg_from_local('MarcaFABLAB01.JPG')  
 #st.video("https://www.youtube.com/watch?v=IYJKM3ie9sE&list=PLMQP5Jy3lKrMVgnuGfCCldqOjo_lGksM4")
 
 # mostrar a imagem final

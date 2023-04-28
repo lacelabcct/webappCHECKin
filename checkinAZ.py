@@ -55,7 +55,7 @@ def add_bg_from_local(image_file):
     
     st.markdown(
     """
-    # Bem vindo, Colégio AZ Internacional!
+    ## Bem vindo, Colégio AZ Internacional!
     """
     )
     st.markdown(
@@ -72,7 +72,7 @@ def add_bg_from_local(image_file):
     
     st.markdown(
     """
-    ### A Equipe FabLab Mackenzie desea a todos uma excelente manhã!
+    ### A Equipe FabLab Mackenzie deseja uma excelente manhã!
     """
     )
 add_bg_from_local('FabLabBackground.PNG')  

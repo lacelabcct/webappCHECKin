@@ -109,7 +109,7 @@ st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Ma
 SUB_TITULO = '<p style="font-family:tahoma; color:white; font-size: 14px;">CC BY-NC-SA - Esta licença permite que outros alterem, adaptem e criem a partir desta publicação para fins não comerciais, desde que atribuam aos criadores o devido crédito e que licenciem as novas criações sob termos idênticos.</p>'
 st.markdown(SUB_TITULO, unsafe_allow_html=True)
 
-caminho = dfD2['link'][0]
+caminho = dfD['link'][0]
 c1, c2, c3, c4, c5, c6 = st.columns((1, 1, 1, 1, 1, 1))
 with c1:
   if st.button("0"):

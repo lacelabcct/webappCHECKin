@@ -61,9 +61,8 @@ def add_bg_from_local(image_file):
     Dia 1 de 3 | ?h 
     Dia 2 de 3 | ?h 
     Dia 3 de 3 | ?h     
-    """)
-    
-    
+    """
+    )
     
 add_bg_from_local('FabLabBackground.PNG')  
 

@@ -51,20 +51,20 @@ def add_bg_from_local(image_file):
     </style>
     """,
     unsafe_allow_html=True
-    )      
+    ) 
+    
+    st.markdown(
+    """
+    ##### CRONOGRAMA DE ATIVIDADES 
+    HORÁRIO | ATIVIDADE
+    :---------: | :------: 
+    08h30 às 09h00 | Acolhida inicial
+    09h00 às 09h20 | Palavra do Rev. Jabis
+    09h20 às 09h30 | Palavra Prof. Massaki e Emely
+    09h30 às 10h45 | Oficina "Desenvolvimento de Websites (Web app) com linguagem Python"
+    """
+    )
 add_bg_from_local('FabLabBackground.PNG')  
-
-st.markdown(
-"""
-##### CRONOGRAMA DE ATIVIDADES 
-HORÁRIO | ATIVIDADE
-:---------: | :------: 
-08h30 às 09h00 | Acolhida inicial
-09h00 às 09h20 | Palavra do Rev. Jabis
-09h20 às 09h30 | Palavra Prof. Massaki e Emely
-09h30 às 10h45 | Oficina "Desenvolvimento de Websites (Web app) com linguagem Python"
-"""
-)
 
 col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
 with col1:
@@ -78,7 +78,7 @@ with col3:
     st.markdown(SUB_TITULO1, unsafe_allow_html=True)
 with col4: 
     st.image('QRcodeFormAZ.png', width=150, output_format='auto')    
-    
+ 
 # mostrar a imagem final
 #fig, ax = plt.subplots(figsize=(10,6))
 #ax.imshow(wordcloud, interpolation='bilinear')

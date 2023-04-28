@@ -13,7 +13,7 @@ import base64
 
 #from urllib.error import URLError
 #DATA CHECK-IN
-rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vTN00fNo-fKTaMHme6ed2fTMkmqvoCxUA_u1PmkL9bADZ-OXrVcTvmw4o3yrgRjGdP09vOd51Za2uPE/pub?gid=0&single=true&output=csv')
+rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vSN0hKJZ1jt9QvdF7iXUrHJbG3lPFLJQzXuEQZDd3bEmgDabN0s5Dig6kXzmaQnsarxM8EeNzLdAQd0/pub?gid=1742460095&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
 selecao = dfD['Aprovado']=='X'

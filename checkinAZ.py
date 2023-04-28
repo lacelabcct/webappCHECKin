@@ -60,7 +60,7 @@ with col1:
 with col2: 
     st.write(" ") 
 with col3: 
-    #st.subheader("Como está sendo a sua experiência no FabLab?")
+    #st.subheader("Como foi a sua experiência nesta oficina Python?")
     SUB_TITULO1 = '<p style="font-family:tahoma; color:black; font-size: 28px;">Como está sendo a sua experiência no FabLab?</p>'
     st.markdown(SUB_TITULO1, unsafe_allow_html=True)
 with col4: 

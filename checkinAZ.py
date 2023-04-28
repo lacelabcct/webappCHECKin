@@ -64,7 +64,7 @@ with col3:
     SUB_TITULO1 = '<p style="font-family:tahoma; color:black; font-size: 28px;">Como está sendo a sua experiência nesta oficina?</p>'
     st.markdown(SUB_TITULO1, unsafe_allow_html=True)
 with col4: 
-    st.image('AppsheetCheck-inQRCode.png', width=150, output_format='auto')    
+    st.image('QRcodeFormAZ.png', width=150, output_format='auto')    
     
 # mostrar a imagem final
 #fig, ax = plt.subplots(figsize=(10,6))

@@ -51,19 +51,7 @@ def add_bg_from_local(image_file):
     </style>
     """,
     unsafe_allow_html=True
-    )
-    
-    st.markdown(
-    """
-    ##### CRONOGRAMA 
-    HORÁRIO | ATIVIDADE
-    :---------: | :------: 
-    Dia 1 de 3 | ?h 
-    Dia 2 de 3 | ?h 
-    Dia 3 de 3 | ?h     
-    """
-    )
-    
+    )      
 add_bg_from_local('FabLabBackground.PNG')  
 
 col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
@@ -96,7 +84,17 @@ st.info(" Desenvolvido em Linguagem Python | Equipe FabLab/Programador: prof. Ma
 
 SUB_TITULO = '<p style="font-family:tahoma; color:white; font-size: 14px;">CC BY-NC-SA - Esta licença permite que outros alterem, adaptem e criem a partir desta publicação para fins não comerciais, desde que atribuam aos criadores o devido crédito e que licenciem as novas criações sob termos idênticos.</p>'
 st.markdown(SUB_TITULO, unsafe_allow_html=True)
-
+st.markdown(
+"""
+##### CRONOGRAMA DE ATIVIDADES 
+HORÁRIO | ATIVIDADE
+:---------: | :------: 
+08h30 às 09h00 | Acolhida inicial
+09h00 às 09h20 | Palavra do Rev. Jabis
+09h20 às 09h30 | Palavra Prof. Massaki e Emely
+09h30 às 10h45 | Oficina "Desenvolvimento de Websites (Web app) com linguagem Python"
+"""
+)
 caminho = dfD2['link'][0]
 c1, c2, c3, c4, c5, c6 = st.columns((1, 1, 1, 1, 1, 1))
 with c1:

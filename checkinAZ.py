@@ -56,7 +56,8 @@ add_bg_from_local('FabLabBackground.PNG')
 
 col1, col2, col3, col4 = st.columns((1, 1, 1, 1))
 with col1:
-    st.image('LOGO - FabLLab.JPG', width=150, output_format='auto')
+    #st.image('LOGO - FabLLab.JPG', width=150, output_format='auto')
+    st.image('AZ.jpeg', width=150, output_format='auto')    
 with col2: 
     st.write(" ") 
 with col3: 

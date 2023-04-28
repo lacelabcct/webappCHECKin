@@ -18,7 +18,7 @@ dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
 #selecao = dfD['Aprovado']=='X'
 #df01 = dfD[selecao]
-NregD = len(df01)
+NregD = len(dfD)
 
 #Data LINKS
 rD2 = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQhjoG-Sgj_9A1n6PAbwuJ6saRnyw1DW-q6KwEi_i3KxGxXrWGVcTk_daQ_Zpq4RwP8LApufF7l0lVm/pub?gid=0&single=true&output=csv')

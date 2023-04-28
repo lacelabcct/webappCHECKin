@@ -52,6 +52,19 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
+    
+     st.markdown(
+    """
+    ##### CRONOGRAMA 
+    HORÁRIO | ATIVIDADE
+    :---------: | :------: 
+    Dia 1 de 3 | ?h 
+    Dia 2 de 3 | ?h 
+    Dia 3 de 3 | ?h     
+    """
+    
+    
+    
 add_bg_from_local('FabLabBackground.PNG')  
 
 col1, col2, col3, col4 = st.columns((1, 1, 1, 1))

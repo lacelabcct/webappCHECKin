@@ -16,8 +16,8 @@ import base64
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vSN0hKJZ1jt9QvdF7iXUrHJbG3lPFLJQzXuEQZDd3bEmgDabN0s5Dig6kXzmaQnsarxM8EeNzLdAQd0/pub?gid=1742460095&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
-selecao = dfD['Aprovado']=='X'
-df01 = dfD[selecao]
+#selecao = dfD['Aprovado']=='X'
+#df01 = dfD[selecao]
 NregD = len(df01)
 
 #Data LINKS
@@ -27,7 +27,7 @@ dfD2 = pd.read_csv(BytesIO(dataD2), index_col=0)
 NregD2 = len(dfD2)
 
 # eliminar as colunas com valores ausentes
-summary = df01.dropna(subset=['Mensagem'], axis=0)['Mensagem']
+summary = dfD.dropna(subset=['Mensagem'], axis=0)['Mensagem']
 # concatenar as palavras
 all_summary = " ".join(s for s in summary)
 # lista de stopword

@@ -55,6 +55,11 @@ def add_bg_from_local(image_file):
     
     st.markdown(
     """
+    ##### Bem vindo, Colégio AZ Internacional!
+    """
+    )
+    st.markdown(
+    """
     ##### CRONOGRAMA DE ATIVIDADES 
     HORÁRIO | ATIVIDADE
     :---------: | :------: 
@@ -74,7 +79,7 @@ with col2:
     st.write(" ") 
 with col3: 
     #st.subheader("Como foi a sua experiência nesta oficina Python?")
-    SUB_TITULO1 = '<p style="font-family:tahoma; color:black; font-size: 28px;">Como está sendo a sua experiência nesta oficina?</p>'
+    SUB_TITULO1 = '<p style="font-family:tahoma; color:black; font-size: 28px;">Como está sendo a sua experiência?</p>'
     st.markdown(SUB_TITULO1, unsafe_allow_html=True)
 with col4: 
     st.image('QRcodeFormAZ.png', width=150, output_format='auto')    

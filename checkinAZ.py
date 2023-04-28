@@ -21,7 +21,7 @@ dfD = pd.read_csv(BytesIO(dataD), index_col=0)
 NregD = len(dfD)
 
 #Data LINKS
-rD2 = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQhjoG-Sgj_9A1n6PAbwuJ6saRnyw1DW-q6KwEi_i3KxGxXrWGVcTk_daQ_Zpq4RwP8LApufF7l0lVm/pub?gid=0&single=true&output=csv')
+rD2 = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vSN0hKJZ1jt9QvdF7iXUrHJbG3lPFLJQzXuEQZDd3bEmgDabN0s5Dig6kXzmaQnsarxM8EeNzLdAQd0/pub?gid=1435110707&single=true&output=csv')
 dataD2 = rD2.content
 dfD2 = pd.read_csv(BytesIO(dataD2), index_col=0)
 NregD2 = len(dfD2)

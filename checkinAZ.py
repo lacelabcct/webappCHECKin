@@ -27,7 +27,7 @@ dfD2 = pd.read_csv(BytesIO(dataD2), index_col=0)
 NregD2 = len(dfD2)
 
 # eliminar as colunas com valores ausentes
-summary = dfD.dropna(subset=['Mensagem'], axis=0)['Mensagem']
+summary = dfD.dropna(subset=['O que achou em poucas palavras?'], axis=0)['O que achou em poucas palavras?']
 # concatenar as palavras
 all_summary = " ".join(s for s in summary)
 # lista de stopword

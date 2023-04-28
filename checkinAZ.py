@@ -61,7 +61,7 @@ with col2:
     st.write(" ") 
 with col3: 
     #st.subheader("Como foi a sua experiência nesta oficina Python?")
-    SUB_TITULO1 = '<p style="font-family:tahoma; color:black; font-size: 28px;">Como está sendo a sua experiência no FabLab?</p>'
+    SUB_TITULO1 = '<p style="font-family:tahoma; color:black; font-size: 28px;">Como está sendo a sua experiência nesta oficina?</p>'
     st.markdown(SUB_TITULO1, unsafe_allow_html=True)
 with col4: 
     st.image('AppsheetCheck-inQRCode.png', width=150, output_format='auto')    

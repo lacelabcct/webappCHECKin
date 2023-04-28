@@ -55,18 +55,24 @@ def add_bg_from_local(image_file):
     
     st.markdown(
     """
-    ##### Bem vindo, Colégio AZ Internacional!
+    # Bem vindo, Colégio AZ Internacional!
     """
     )
     st.markdown(
     """
-    ##### CRONOGRAMA DE ATIVIDADES 
+    ### ROTEIRO DESTA MANHÃ: 
     HORÁRIO | ATIVIDADE
     :---------: | :------: 
     08h30 às 09h00 | Acolhida inicial
     09h00 às 09h20 | Palavra do Rev. Jabis
     09h20 às 09h30 | Palavra Prof. Massaki e Emely
     09h30 às 10h45 | Oficina "Desenvolvimento de Websites (Web app) com linguagem Python"
+    """
+    )
+    
+    st.markdown(
+    """
+    ### A Equipe FabLab Mackenzie desea a todos uma excelente manhã!
     """
     )
 add_bg_from_local('FabLabBackground.PNG')  

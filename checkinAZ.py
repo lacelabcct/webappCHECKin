@@ -60,7 +60,7 @@ def add_bg_from_local(image_file):
     )
     st.markdown(
     """
-    ### ROTEIRO DESTA MANHÃ: 
+    #### ROTEIRO DESTA MANHÃ: 
     HORÁRIO | ATIVIDADE
     :---------: | :------: 
     08h30 às 09h00 | Acolhida inicial
@@ -72,7 +72,7 @@ def add_bg_from_local(image_file):
     
     st.markdown(
     """
-    ### A Equipe FabLab Mackenzie deseja uma excelente manhã!
+    #### A Equipe FabLab Mackenzie deseja uma excelente manhã!
     """
     )
 add_bg_from_local('FabLabBackground.PNG')  
